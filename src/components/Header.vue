@@ -161,13 +161,13 @@ export default {
                     <!-- SEARCH -->
                     <div class="flex items-center ">
                         
-                        <div class="w-[200px] pr-[20px] flex items-center mr-[20px] md:mr-[30px] rounded-full shadow border">
+                        <div class="w-[40vw] md:w-[200px] pr-[4vw] md:pr-[20px] flex items-center mr-[4vw] md:mr-[30px]  rounded-full shadow border">
                             <input v-model="searchTerm" @change="searchEvent" type="search"
-                                class=" w-full  h-12  py-4  pl-4 rounded-full mr-[10px] outline-none"
+                                class=" w-full h-[9vw]  md:h-12 py-[4vw] md:py-4 pl-[4vw] md:pl-4 rounded-full mr-[2vw] md:mr-[10px] outline-none"
                                 placeholder="Ricerca...">
 
                                 <button>
-                            <svg class="text-black h-6 w-6 lg:h-5 lg:w-5  fill-current"
+                            <svg class="text-black h-[5vw] md:h-6 w-[4.5vw] md:w-6 lg:h-5  fill-current"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" x="0px" y="0px" viewBox="0 0 56.966 56.966"
                                 style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
@@ -185,8 +185,8 @@ export default {
                         <CartView v-if="cartShow" @close-cart="showCart" @checkout="showCart"></CartView>
 
                         <!-- menù -->
-                        <div @click="fnMenu" v-if="men" class=" mr-[10px] w-[30px] min-[1240px]:hidden"><svg
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[30px]">
+                        <div @click="fnMenu" v-if="men" class=" mr-[2vw] md:mr-0 w-[30px] min-[1240px]:hidden"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[6vw] md:w-[30px]">
                                 
                                 <path
                                     d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
@@ -196,7 +196,7 @@ export default {
 
 
                             <!-- x tendina -->
-                            <svg class="w-[23px] mr-[10px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <svg class="w-[4vw] md:w-[23px] mr-[2vw] md:mr-[10px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                 <path
                                     d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
                             </svg>
