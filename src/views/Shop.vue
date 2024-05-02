@@ -77,19 +77,19 @@ export default {
 <template>
     <h2 class="text-medio lg:text-grande text-center font-bold lg:py-[40px] py-[15px]"> TUTTI I PRODOTTI </h2>
 
-    <div class="flex pr-[10px]">
+    <div class="flex justify-center md:justify-start w-screen px-auto">
 
         <!-- Ordina per prezzo -->
         <div class="relative">
             <div @click="ordina"
-                class=" flex justify-center items-center p-[5px] border-[2px] w-[130px] border-black text-center text-[18px] ml-[40px]">
+                class=" flex justify-center items-center p-[5px] border-[2px] w-[130px] border-black text-center text-[18px] ml-0 md:ml-[40px]">
                 Prezzo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="h-[15px] mt-[0px] ml-[7px]">
                     <path
                         d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                 </svg></div>
 
             <div v-if="ordinaV"
-                class="absolute top-[41px] z-10 flex flex-col justify-center items-start px-[20px] bg-slate-400 w-[130px] ml-[40px]">
+                class="absolute top-[41px] z-10 flex flex-col justify-center items-start px-[20px] bg-slate-400 w-[130px] ml-0 md:ml-[40px] ">
 
                 <div @click="attivaDec" class="pt-[15px]">
                     <button class="text-white hover:underline underline-offset-4">Crescente</button>
