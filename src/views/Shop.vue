@@ -80,50 +80,54 @@ export default {
     <div class="flex pr-[10px]">
 
         <!-- Ordina per prezzo -->
-        <div>
-        <div @click="ordina"
-            class=" flex justify-center items-center p-[10px] border-[2px] w-[130px] border-black text-center text-medioMobile ml-[40px]">
-            Prezzo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="h-[20px] mt-[5px] ml-[10px]">
-                <path
-                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-            </svg></div>
+        <div class="relative">
+            <div @click="ordina"
+                class=" flex justify-center items-center p-[5px] border-[2px] w-[130px] border-black text-center text-[18px] ml-[40px]">
+                Prezzo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="h-[15px] mt-[0px] ml-[7px]">
+                    <path
+                        d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                </svg></div>
 
-        <div v-if="ordinaV"
-            class=" flex flex-col justify-center items-start px-[20px] bg-slate-400 w-[130px] ml-[40px]">
+            <div v-if="ordinaV"
+                class="absolute top-[41px] z-10 flex flex-col justify-center items-start px-[20px] bg-slate-400 w-[130px] ml-[40px]">
 
-            <div @click="attivaDec" class="pt-[15px]">
-                <button class="underline hover:text-white">Crescente</button>
+                <div @click="attivaDec" class="pt-[15px]">
+                    <button class="text-white hover:underline underline-offset-4">Crescente</button>
+                </div>
+
+
+                <div @click="attivaCre" class="pb-[15px]">
+                    <button class="text-white hover:underline underline-offset-4">Decrescente</button>
+                </div>
+
             </div>
-
-
-            <div @click="attivaCre" class="pb-[15px]">
-                <button class="underline hover:text-white">Decrescente</button>
-            </div>
-
         </div>
-    </div>
 
         <!-- Ordina per categoria -->
-        <div>
-        <div @click="ordinaC"
-            class=" flex justify-center items-center p-[10px] border-[2px] w-[160px] border-black text-center text-medioMobile ml-[40px]">
-            Categorie <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="h-[20px] mt-[5px] ml-[10px]">
-                <path
-                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-            </svg></div>
+        <div class="relative">
+            <div @click="ordinaC"
+                class="flex justify-center items-center p-[5px] border-[2px] w-[160px] border-black text-center text-[18px] ml-[40px]">
+                Categorie <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                    class="h-[15px] mt-[0px] ml-[7px]">
+                    <path
+                        d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                </svg></div>
 
-        <div v-if="ordinaCC"
-            class="flex flex-col py-[15px] justify-center items-start px-[20px] bg-slate-400 w-[160px] ml-[40px]">
+            <div v-if="ordinaCC"
+                class="absolute z-10 top-[41px] flex flex-col py-[15px] justify-center items-start px-[20px] bg-slate-400 w-[160px] ml-[40px]">
 
-            <!-- Routerlink -->
-            <RouterLink to="/gaming" class="underline hover:text-white">Gaming</RouterLink>
-            <RouterLink to="/elettronica" class="underline hover:text-white">Elettronica</RouterLink>
-            <RouterLink to="/casa" class="underline hover:text-white">Casa</RouterLink>
-            <RouterLink to="/fotografia" class="underline hover:text-white">Fotografia</RouterLink>
-            <RouterLink to="/elettrodomestici" class="underline hover:text-white">Elettrodomestici</RouterLink>
+                <!-- Routerlink -->
+                <RouterLink to="/gaming" class="text-white hover:underline underline-offset-4">Gaming</RouterLink>
+                <RouterLink to="/elettronica" class="text-white hover:underline underline-offset-4">Elettronica
+                </RouterLink>
+                <RouterLink to="/casa" class="text-white hover:underline underline-offset-4">Casa</RouterLink>
+                <RouterLink to="/fotografia" class="text-white hover:underline underline-offset-4">Fotografia
+                </RouterLink>
+                <RouterLink to="/elettrodomestici" class="text-white hover:underline underline-offset-4">
+                    Elettrodomestici</RouterLink>
 
+            </div>
         </div>
-    </div>
     </div>
 
 
