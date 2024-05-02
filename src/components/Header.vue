@@ -121,8 +121,8 @@ export default {
 
                     <!-- LOGO -->
 
-                    <RouterLink to="/" class="text-grande"><svg class="w-[10vw] md:w-[60px]" viewBox="0 0 500 500" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <RouterLink to="/" class="text-grande"><svg class="w-[10vw] md:w-[60px]" viewBox="0 0 500 500"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_288_4)">
                                 <path
                                     d="M320.6 383.3H159.5C153.2 383.3 147.3 386.8 144.3 392.3L106 461.6C103 467.1 105 474 110.5 477C112.2 477.9 114.1 478.4 116 478.4H321.7C346.9 478.4 367.7 458.8 369.2 433.6C370.7 406.1 348.4 383.3 320.6 383.3Z"
@@ -154,28 +154,29 @@ export default {
                         <RouterLink to="/about" class=" hover:underline">Chi siamo </RouterLink>
                     </ul>
                 </div>
-                
+
                 <div class=" flex justify-center items-center">
 
 
                     <!-- SEARCH -->
                     <div class="flex items-center ">
-                        
-                        <div class="w-[42vw] md:w-[200px] pr-[5vw] md:pr-[20px] flex items-center mr-[5vw] md:mr-[30px]  rounded-full shadow border">
+
+                        <div
+                            class="w-[42vw] md:w-[200px] pr-[5vw] md:pr-[20px] flex items-center mr-[5vw] md:mr-[30px]  rounded-full shadow border">
                             <input v-model="searchTerm" @change="searchEvent" type="search"
                                 class=" w-full h-[10.5vw]  md:h-12 py-[4vw] md:py-4 pl-[4vw] md:pl-4 rounded-full mr-[2vw] md:mr-[10px] outline-none"
                                 placeholder="Ricerca...">
 
-                                <button>
-                            <svg class="text-black h-[6vw] md:h-6 w-[5vw] md:w-6 lg:h-5  fill-current"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" x="0px" y="0px" viewBox="0 0 56.966 56.966"
-                                style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
-                                <path
-                                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z">
-                                </path>
-                            </svg>
-                        </button>
+                            <button>
+                                <svg class="text-black h-[6vw] md:h-6 w-[5vw] md:w-6 lg:h-5  fill-current"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" x="0px" y="0px" viewBox="0 0 56.966 56.966"
+                                    style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+                                    <path
+                                        d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z">
+                                    </path>
+                                </svg>
+                            </button>
 
                         </div>
 
@@ -187,7 +188,7 @@ export default {
                         <!-- menù -->
                         <div @click="fnMenu" v-if="men" class=" mr-[1vw] md:mr-0 w-[30px] min-[1240px]:hidden"><svg
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[7.5vw] md:w-[30px]">
-                                
+
                                 <path
                                     d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                             </svg></div>
@@ -196,16 +197,22 @@ export default {
 
 
                             <!-- x tendina -->
-                            <svg class="w-[5vw] md:w-[23px] mr-[1vw] md:mr-[10px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <svg class="w-[5vw] md:w-[23px] mr-[1vw] md:mr-[10px] " xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512">
                                 <path
                                     d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
                             </svg>
                             <!-- tendina -->
-                            <div 
-                                class=" z-20 flex flex-col p-[30px] position absolute top-[100px] right-0  bg-slate-600 w-[180px] h-[170px] transizione duration-300 text-white">
+                            <div
+                                class=" z-20 flex flex-col p-[30px] position absolute top-[100px] right-0  bg-slate-600 w-[235px] h-[310px] transizione duration-300 text-white">
 
                                 <RouterLink to="/shop" class="text-medio hover:underline ">Shop</RouterLink>
-                                <RouterLink to="/saldi" class="text-medio hover:underline ">Saldi</RouterLink>
+                                <RouterLink to="/gaming" class=" text-medio hover:underline">Gaming</RouterLink>
+                                <RouterLink to="/fotografia" class="text-medio hover:underline">Fotografia</RouterLink>
+                                <RouterLink to="/elettronica" class="text-medio hover:underline">Elettronica</RouterLink>
+                                <RouterLink to="/elettrodomestici" class="text-medio hover:underline">Elettrodomestici
+                                </RouterLink>
+                                <RouterLink to="/casa" class=" text-medio hover:underline">Casa</RouterLink>
                                 <RouterLink to="/about" class="text-medio hover:underline">Chi siamo</RouterLink>
 
                             </div>
