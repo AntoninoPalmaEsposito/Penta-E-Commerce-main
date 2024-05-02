@@ -202,7 +202,7 @@ export default {
                             </svg>
                             <!-- tendina -->
                             <div 
-                                class=" flex flex-col p-[30px] position absolute top-[100px] right-0  bg-slate-600 w-[180px] h-[170px] transizione duration-300 text-white">
+                                class=" z-20 flex flex-col p-[30px] position absolute top-[100px] right-0  bg-slate-600 w-[180px] h-[170px] transizione duration-300 text-white">
 
                                 <RouterLink to="/shop" class="text-medio hover:underline ">Shop</RouterLink>
                                 <RouterLink to="/saldi" class="text-medio hover:underline ">Saldi</RouterLink>
