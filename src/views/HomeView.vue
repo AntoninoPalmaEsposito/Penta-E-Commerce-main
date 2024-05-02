@@ -6,8 +6,7 @@
   <div class="relative md:block">
     <div class="absolute md:hidden top-0 w-screen h-[85vh] bg-gradient-to-b from-black to-[rgba(0,0,0,0)]" ></div>
     
-  <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-0 md:p-[20px] bg-slate-300 flex flex-col justify-center items-center " 
-  style="background-image: url('../../src/assets/img/telefonia3.png' )">
+  <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-0 md:p-[20px] bg-slate-300 flex flex-col justify-center items-center bg-[url('../../src/assets/img/telefonia3.png')]">
 
     <h1 class="text-[40px] text-center text-white md:text-black z-10 lg:text-grande font-bold mb-6">
       Scopri il Futuro della Tecnologia! 
