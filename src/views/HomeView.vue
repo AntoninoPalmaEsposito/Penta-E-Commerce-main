@@ -8,11 +8,11 @@
     
   <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-0 md:p-[20px] bg-slate-300 flex flex-col justify-center items-center bg-[url('../../src/assets/img/telefonia3.png')]">
 
-    <h1 class="text-[7vw] md:text-[40px] mt-[-30vw] md:mt-0 leading-[9vw] text-center text-white md:text-black z-10 lg:text-grande font-extrabold mb-[5vw] md:mb-6 px-[3vw] md:px-0">
+    <h1 class="text-[9vw] md:text-[40px] mt-[-30vw] md:mt-0 leading-[9vw] text-center text-white md:text-black z-10 lg:text-grande font-extrabold mb-[5vw] md:mb-6 px-[5vw] md:px-0">
       Scopri il Futuro della Tecnologia! 
     </h1>
 
-    <p class="lg:text-[18px] px-[3vw] md:px-0 text-center text-white md:text-black z-10 text-[4vw] md:text-[22px] leading-9 flex flex-col items-center font-medium ">Esplora la nostra vasta gamma di prodotti tecnologici, dalle ultime novità in telefonia mobile alle lavatrici intelligenti.  Esplora il nostro negozio e porta a casa tua il futuro oggi stesso!  </p>
+    <p class="lg:text-[18px] px-[5vw] leading-[7vw] md:px-0 text-center text-white md:text-black z-10 text-[5vw] md:text-[22px] md:leading-9 flex flex-col items-center font-semibold ">Esplora la nostra vasta gamma di prodotti tecnologici, dalle ultime novità in telefonia mobile alle lavatrici intelligenti.  Esplora il nostro negozio e porta a casa tua il futuro oggi stesso!  </p>
     
 
     <RouterLink to="/Shop" class= " w-[170px] z-10 ease-in-out duration-300 flex justify-center items-center text-white rounded-[10px] bg-blue-600 mt-[10vw] md:mt-[100px] px-[20px] py-[10px] border-[2px] text-piccolo
