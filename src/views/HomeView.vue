@@ -3,19 +3,25 @@
 
 
   <!-- tutti i prodotti -->
-  <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-[20px] bg-slate-300 flex flex-col justify-center lg:items-center items-start bg-[url('../../src/assets/img/telefonia3.png')]">
-    <h1 class="text-[40px] lg:text-grande font-bold mb-6">
+  <div class="relative md:block">
+    <div class="absolute md:hidden top-0 w-screen h-[85vh] bg-gradient-to-b from-black to-[rgba(0,0,0,0)]" ></div>
+    
+  <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-0 md:p-[20px] bg-slate-300 flex flex-col justify-center items-center " 
+  style="background-image: url('../../src/assets/img/telefonia3.png' )">
+
+    <h1 class="text-[40px] text-center text-white md:text-black z-10 lg:text-grande font-bold mb-6">
       Scopri il Futuro della Tecnologia! 
     </h1>
 
-    <p class="lg:text-[18px] text-[22px] leading-9 flex flex-col items-center font-medium ">Esplora la nostra vasta gamma di prodotti tecnologici, dalle ultime novità in telefonia mobile alle lavatrici intelligenti. <span> Esplora il nostro negozio e porta a casa tua il futuro oggi stesso! </span> </p>
+    <p class="lg:text-[18px] text-center text-white md:text-black z-10 text-[22px] leading-9 flex flex-col items-center font-medium ">Esplora la nostra vasta gamma di prodotti tecnologici, dalle ultime novità in telefonia mobile alle lavatrici intelligenti. <span> Esplora il nostro negozio e porta a casa tua il futuro oggi stesso! </span> </p>
     
 
-    <RouterLink to="/Shop" class= " w-[170px] ease-in-out duration-300 flex justify-center items-center text-white rounded-[10px] bg-blue-600 mt-[100px] px-[20px] py-[10px] border-[2px] text-piccolo
+    <RouterLink to="/Shop" class= " w-[170px] z-10 ease-in-out duration-300 flex justify-center items-center text-white rounded-[10px] bg-blue-600 mt-[100px] px-[20px] py-[10px] border-[2px] text-piccolo
  hover:bg-white hover:ease-in-out hover:text-black font-semibold ">
       Acquista ora
     </RouterLink>
   </section>
+</div>
 
 
 
