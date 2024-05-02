@@ -10,7 +10,7 @@
 
         <!-- Notifica carrello -->
         <div v-if="cartMessage"
-            class="bg-red-500 text-white font-bold text-[14px] p-1 leading-none w-[26px] h-[26px] flex items-center justify-center rounded-full absolute top-[-10px] right-[-10px]">
+            class="bg-red-500 text-white font-bold text-[2.3vw] md:text-[12px] p-[0.8vw] md:p-1 leading-none w-[4vw] md:w-[20px] h-[4vw] md:h-[20px] flex items-center justify-center rounded-full absolute top-[-3.5vw] md:top-[-15px] right-[1.5vw] md:right-[-5px]">
             {{ cartMessage > 99 ? "99+" : cartMessage }}
         </div>
     </div>
