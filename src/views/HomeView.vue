@@ -6,16 +6,18 @@
   <div class="relative md:block">
     <div class="absolute md:hidden top-0 w-screen h-[85vh] bg-gradient-to-b from-black to-[rgba(0,0,0,0)]" ></div>
     
-  <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-0 md:p-[20px] bg-slate-300 flex flex-col justify-start   md:justify-center items-center bg-[url('../../src/assets/img/telefonia3.png')]">
+  <section class="bg-cover bg-no-repeat lg:bg-top h-[85vh] lg:h-[80vh] p-0 md:p-[20px] bg-slate-300 flex flex-col justify-between   md:justify-center items-center bg-[url('../../src/assets/img/telefonia3.png')]">
 
+    <div class="z-10">
     <h1 class="text-[9vw] md:text-[40px] mt-[15vw] md:mt-0 leading-[11vw] text-center text-white md:text-black z-10 lg:text-grande font-extrabold mb-[8vw] md:mb-6 px-[5vw] md:px-0">
       Scopri il Futuro della Tecnologia! 
     </h1>
 
     <p class="lg:text-[18px] px-[5vw] leading-[7vw] md:px-0 text-center text-white md:text-black z-10 text-[5vw] md:text-[22px] md:leading-9 flex flex-col items-center font-semibold ">Esplora la nostra vasta gamma di prodotti tecnologici, dalle ultime novità in telefonia mobile alle lavatrici intelligenti.  Esplora il nostro negozio e porta a casa tua il futuro oggi stesso!  </p>
+  </div>
     
 
-    <RouterLink to="/Shop" class= " w-[170px] z-10 ease-in-out duration-300 flex justify-center items-center text-white rounded-[10px] bg-blue-600 mt-[9vw] md:mb-0 md:mt-[100px] px-[20px] py-[10px] border-[2px] text-piccolo
+    <RouterLink to="/Shop" class= " w-[170px] z-10 ease-in-out duration-300 flex justify-center items-center text-white rounded-[10px] bg-blue-600 mb-[10vw] md:mb-0 md:mt-[100px] px-[20px] py-[10px] border-[2px] text-piccolo
  hover:bg-white hover:ease-in-out hover:text-black font-semibold ">
       Acquista ora
     </RouterLink>
