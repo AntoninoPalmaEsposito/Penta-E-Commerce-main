@@ -60,10 +60,10 @@ export default {
             <p class="text-medio ">{{ product.price }} €</p>
             <p class="text-medio mt-5">{{ product.description }}</p>
             <p class="text-piccolo mt-5">Disponibilità: {{ product.quantity }}</p>
-            <input class="mt-[50px] p-[5px] border-[1px] rounded-md border-black" type="number" v-model="quantity"
+            <input class="mt-[10px] p-[5px] border-[1px] rounded-md border-black" type="number" v-model="quantity"
                 min="1" :max="product.quantity" @change="validateQuantity">
             <button
-                class="mt-[5px] bg-blue-600 hover:bg-white hover:text-black text-white text-medio font-medium lg:w-[400px] w-full py-2 border-[2px] hover:border-black border-blue-600 rounded-[10px] ease-in-out duration-300"
+                class="mt-[40px] mb-[-100px] bg-blue-600 hover:bg-white hover:text-black text-white text-medio font-medium lg:w-[400px] w-full py-2 border-[2px] hover:border-black border-blue-600 rounded-[10px] ease-in-out duration-300"
                 @click="addToCart">Aggiungi al carrello</button>
         </div>
 
